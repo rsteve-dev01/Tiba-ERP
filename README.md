@@ -17,41 +17,41 @@
 <a name="introduction"></a>
 ## 1. Introduction
 ### Purpose
-The purpose of this document is to specify the requirements for a Health Information System ERP designed to comply with and streamline operations within the U.S. healthcare context.
+The purpose of this document is to specify the requirements for a Health Information System ERP designed to streamline operations within the Kenyan healthcare context.
 
 ### Scope
-This ERP system will manage patient care, staff, inventory, finance, and compliance, specifically tailored to the U.S. healthcare environment.
+This ERP system will manage patient care, staff, inventory, finance, and compliance, specifically tailored to the Kenyan healthcare environment.
 
 ### Definitions, Acronyms, Abbreviations
 - **EHR**: Electronic Health Record
-- **HIPAA**: Health Insurance Portability and Accountability Act
-- **CMS**: Centers for Medicare & Medicaid Services
-- **HL7**: Health Level 7, a set of international standards for the exchange of clinical and administrative data
+- **NHIF**: National Hospital Insurance Fund
+- **API**: Application Programming Interface
+- **MOH**: Ministry of Health, Kenya
 
 ### References
-- HIPAA Compliance Guidelines
-- CMS Regulations and Guidelines
-- HL7 Standard Documentation
+- Kenyan MOH Guidelines
+- NHIF Regulations
+- International Healthcare Standards
 
 ### Overview
-This SRS document details system functionalities, user interfaces, performance requirements, and legal compliance specific to the U.S. healthcare system.
+This SRS document details system functionalities, user interfaces, performance requirements, and legal compliance specific to the Kenyan healthcare system.
 
 <a name="overall-description"></a>
 ## 2. Overall Description
 ### Product Perspective
-This ERP system will integrate seamlessly with existing U.S. healthcare infrastructure, including popular EHR systems, medical billing software, and insurance claim processing systems.
+This ERP system will integrate seamlessly with existing Kenyan healthcare infrastructure, including local EHR systems, medical billing software, and NHIF claim processing systems.
 
 ### Product Features
 - Patient information management
 - Scheduling and appointment management
-- Billing, invoicing, and insurance claim processing
-- Compliance management with U.S. healthcare laws
+- Billing, invoicing, and NHIF claim processing
+- Compliance management with Kenyan healthcare laws
 
 ### User Classes and Characteristics
 - Healthcare Providers (Doctors, Nurses)
 - Administrative Staff
 - Patients
-- Insurance Companies
+- Insurance Companies (including NHIF)
 
 ### Operating Environment
 - Compatibility with Windows and MacOS
@@ -59,30 +59,30 @@ This ERP system will integrate seamlessly with existing U.S. healthcare infrastr
 - Mobile support for iOS and Android
 
 ### Design and Implementation Constraints
-- Compliance with HIPAA for data security
-- Interoperability with existing HL7-based systems
+- Compliance with Kenyan data protection laws
+- Interoperability with local healthcare systems and NHIF requirements
 
 ### Assumptions and Dependencies
-- Regular updates for compliance with CMS guidelines
-- Dependence on third-party APIs for insurance verification
+- Regular updates for compliance with MOH guidelines
+- Dependence on third-party APIs for NHIF verification
 
 <a name="system-features"></a>
 ## 3. System Features
 ### Patient Management
-- **Registration**: HIPAA-compliant data collection
-- **History**: Integration with existing EHR systems
+- **Registration**: Data collection compliant with Kenyan healthcare regulations
+- **History**: Integration with local EHR systems
 
 ### Appointment Scheduling
 - **Booking**: Online and in-person scheduling options
 - **Notifications**: Automated reminders via SMS and email
 
 ### EMR and EHR
-- **Record Management**: HL7 compliant data exchange
-- **Security**: Encryption and access control in line with HIPAA
+- **Record Management**: Data exchange compliant with Kenyan healthcare standards
+- **Security**: Encryption and access control as per Kenyan regulations
 
 ### Billing and Insurance
-- **Claims Processing**: Integration with major U.S. insurance providers
-- **CMS Reporting**: Automated reporting for Medicare and Medicaid services
+- **Claims Processing**: Integration with NHIF and other insurance providers
+- **MOH Reporting**: Automated reporting for public health services
 
 ### Inventory Management
 - **Medication Tracking**: Real-time inventory updates
@@ -90,14 +90,14 @@ This ERP system will integrate seamlessly with existing U.S. healthcare infrastr
 
 ### Staff Management
 - **Rosters**: Shift scheduling and workload management
-- **Payroll**: Integration with popular U.S. payroll systems
+- **Payroll**: Integration with Kenyan payroll systems
 
 ### Reporting and Analytics
 - **Custom Reports**: For healthcare providers and administrative staff
 - **Data Analytics**: Insights into operational efficiency and patient care
 
 ### Security and Compliance
-- **Data Protection**: Adherence to U.S. data protection laws
+- **Data Protection**: Adherence to Kenyan data protection laws
 - **Audit Trails**: For ensuring accountability and transparency
 
 <a name="external-interface-requirements"></a>
@@ -108,20 +108,48 @@ This ERP system will integrate seamlessly with existing U.S. healthcare infrastr
 
 ### Hardware Interfaces
 - **Scanners**: Integration with barcode scanners for inventory management
-- **Medical Devices**: Compatibility with standard U.S. medical devices
+- **Medical Devices**: Compatibility with standard Kenyan medical devices
 
 ### Software Interfaces
-- **EHR Systems**: Integration with popular EHR systems used in the U.S.
-- **Insurance APIs**: Real-time connectivity with insurance company databases
+- **EHR Systems**: Integration with popular EHR systems used in Kenya
+- **Insurance APIs**: Real-time connectivity with NHIF and other insurance databases
 
 ### Communication Interfaces
 - **Email and SMS Gateway**: For appointment reminders and notifications
 
 <a name="system-features-detail"></a>
 ## 5. System Features Detail
-- **Feature 1**: Details, use cases, workflow diagrams
-- **Feature 2**: Details, use cases, workflow diagrams
-- ...
+### Patient Management Detail
+- **Registration Form Design**: Customizable forms to capture patient data including personal information, medical history, and consent forms.
+- **Data Privacy**: Mechanisms to ensure patient confidentiality and compliance with Kenyan data protection laws.
+
+### Appointment Scheduling Detail
+- **Calendar Integration**: Synchronization with digital calendars for appointment management.
+- **Multi-Department Scheduling**: Ability to manage appointments across different departments within the healthcare facility.
+
+### EMR and EHR Detail
+- **Document Management**: Functionality for uploading and managing digital copies of patient records.
+- **Interoperability**: Ensuring seamless data exchange with other healthcare providers and systems.
+
+### Billing and Insurance Detail
+- **Automated Invoicing**: Generation of digital invoices for services rendered.
+- **NHIF Compliance**: Features to handle NHIF billing requirements, including claim submissions and tracking.
+
+### Inventory Management Detail
+- **Alert System**: Notifications for low stock levels or expiring medications.
+- **Vendor Management**: Capabilities to manage vendor information and purchase orders.
+
+### Staff Management Detail
+- **Staff Database**: Comprehensive database for managing employee records.
+- **Performance Tracking**: Tools for monitoring staff performance and managing evaluations.
+
+### Reporting and Analytics Detail
+- **Customizable Dashboard**: User-friendly dashboard for quick access to key performance indicators.
+- **Data Export**: Functionality to export data for offline analysis or reporting purposes.
+
+### Security and Compliance Detail
+- **Regular Audits**: Scheduled audits to ensure continuous compliance with security standards.
+- **User Training**: Providing training modules for staff on data protection and system security.
 
 <a name="non-functional-requirements"></a>
 ## 6. Non-functional Requirements
@@ -156,39 +184,5 @@ This ERP system will integrate seamlessly with existing U.S. healthcare infrastr
 <a name="other-requirements"></a>
 ## 8. Other Requirements
 ### Regulatory Compliance
-- **HIPAA Compliance**: Ensuring all aspects of the system meet HIPAA standards
-- **CMS Reporting Requirements**: Compliance with Medicare and Medicaid reporting
-
-### Environmental Requirements
-- **Hardware Specifications**: Minimum hardware requirements for optimal performance
-
-<a name="appendices"></a>
-## 9. Appendices
-### Glossary
-- **Term 1**: Definition
-- **Term 2**: Definition
-- ...
-
-### Supporting Documents
-- **Document 1**: Reference or link
-- **Document 2**: Reference or link
-- ...
-
-### Technology Stack
-- **Front-end**: Technologies used for front-end development
-- **Back-end**: Technologies used for back-end development
-- ...
-
-<a name="approval"></a>
-## 10. Approval
-### Stakeholder Sign-off
-- **Name 1**: Title and signature
-- **Name 2**: Title and signature
-- ...
-
-<a name="revision-history"></a>
-## 11. Revision History
-### Document Tracking
-- **Version 1.0**: Initial draft, date
-- **Version 1.1**: Updates, date
-- ...
+- **Kenyan Healthcare Compliance**: Ensuring all aspects of the system meet local standards
+- **NHIF Reporting Requirements**: Compliance
